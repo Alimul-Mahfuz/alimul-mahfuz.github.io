@@ -1,0 +1,165 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 500px;
+    background-image: url(../images/banner.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 400px){
+    .banner{
+        min-height: 500px;
+        background-image: url(../images/banner.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.acrylic{
+    border-radius: 15px;
+    opacity: 0.7 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.acrylic .col-12{
+    opacity: 1 !important;
+}
+.work-item{
+    position: relative;
+    padding: 10px 25px;
+    min-height: 160px;
+}
+
+.work-item::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(129, 129, 129);
+    display: block;
+    position: absolute;
+    top:15px;
+    left: -11px;
+}
+
+.edu-item{
+    position: relative;
+    padding: 10px 25px;
+    min-height: 160px;
+}
+
+.edu-item::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(129, 129, 129);
+    display: block;
+    position: absolute;
+    top:15px;
+    left: -11px;
+}
+
+footer a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.fs-12{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.rt-x{
+    transform: rotate(270deg);
+}
+
+#portfolio-carousel .item {
+    height: 400px; /* Adjust the height as per your requirement */
+}
+
+.awardCertificateTimelime .card{
+    position: relative;
+    padding: 10px 25px;
+}
+
+.awardCertificateTimelime .card::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(129, 129, 129);
+    display: block;
+    position: absolute;
+    right: -23px;
+
+}
+
+.awardCertificateTimelime .card .row::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transform: rotate(90deg);
+    border-bottom: 16px solid rgb(129, 129, 129); /* Adjust the color as desired */;
+    position: absolute;
+    right: 11px;
+    top: 19px;
+
+}
+
+.sectionbg{
+    background-image: url(../images/sectionbg03.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionbg-alt{
+    background-image: url(../images/sectionbg04.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.award-card:nth-child(odd), .card-body:nth-of-type(odd){
+    background: rgba(37, 37, 42, 0.47);
+}
+.awardCertificateTimelime .card{
+    background:none;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+footer{
+    border-top: 5px solid; /* Set a solid border */
+    border-image: linear-gradient(to right, #12355B, #75DDDD); /* Apply gradient border */
+    border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+}
+
+
+@media screen and (max-width: 400px){
+    .sectionbg{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .sectionbg-alt{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .certificate-icon{
+        width: 100px;
+        padding: 15px;
+    }
+}
+.tech-icon img{
+    width: 50px !important;
+}
