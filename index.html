@@ -50,11 +50,11 @@
                 data-aos="zoom-out-down" data-aos-delay="50" data-aos-duration="1000">
                 <div class="col-12 col-md-4 p-3 opacity-100 text-white">
                     <img src="./assets/images/profile.jpg"
-                        class="img-fluid mx-auto mx-md-0 hero-image d-block rounded-circle" alt="">
+                        class="img-fluid mx-auto mx-md-0 hero-image d-block rounded-circle" style="height: 260px;" alt="">
                 </div>
                 <div class="col-12 col-md-8 p-3 opacity-100 text-white">
                     <h1>Hi, I am Alimul Mahfuz Tushar</h1>
-                    <p class="mb-3">
+                    <p class="mb-3 text-justify">
                         Hello, I'm Alimul Mahfuz Tushar, a computer science and engineering graduate from the American International University, Bangladesh. I'm a tech enthusiast with a passion for using technology to make a positive impact on people's lives. I have experience in various coding languages and development tools like Java, PHP, Python, C, C++, and SQL. My interests lie in software development, machine learning, and data science. Currently, I'm working on machine learning, classification models, and web development using the Laravel framework. I'm particularly interested in machine learning research, and my ultimate goal is to create innovative applications that combine my technical knowledge and problem-solving skills.
                     </p>
                     <a href="https://drive.google.com/file/d/1Ql0fHsXMjZBzQs8rK065HnX5oACvT0M_/view?usp=share_link"
@@ -292,7 +292,8 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/scripts/owl.carousel.js"></script>
+    <!-- <script src="./assets/scripts/owl.carousel.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         AOS.init();
     </script>
@@ -302,8 +303,9 @@
             loop: true,
             nav: false,
             margin:10,
-            autoPlay: true,
-            autoplayTimeout: 1000,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
             autoHeight: false,
             responsive: {
                 0: {

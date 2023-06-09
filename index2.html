@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-bs-theme='dark'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alimul Mahfuz Tushar | Protfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Portfolio start-->
+    <section class="portfolio sectionbg" id="portfolio">
+        <div class="container py-5 position-relative">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3" data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="1000">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="col-12 col-md-8" data-aos="fade-up-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-12 owl-carousel owl-theme" id="portfolio-carousel">
+                            <div class="card item">
+                                <img src="./assets/images/portfolios/bloodbank/bloodbanksystem.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    <h5 class="card-title">Blood Bank System</h5>
+                                    <p>An admin panel for blood bank management system using PHP and PL/SQL</p>
+                                </div>
+                            </div>
+                            <div class="card item">
+                                <img src="./assets/images/portfolios/e-learning/e-learning.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    <h5 class="card-title">Online Learning Platform</h5>
+                                    <p>It's an online learning platform, build with using raw PHP, HTML, CSS
+                                        and Javascript and My SQL database</p>
+                                </div>
+                            </div>
+                            <div class="card item">
+                                <img src="./assets/images/portfolios/web-development/olivine_digital.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    <h5 class="card-title">Olivine Digital</h5>
+                                    <p>Copany profile website for Olivine Limited.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio end-->
+
+    <!-- Footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="./assets/scripts/owl.carousel.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        $('#portfolio-carousel').owlCarousel({
+            item: 1,
+            loop: true,
+            nav: false,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            autoHeight: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
