@@ -1,21 +1,12 @@
-$('#portfolio-carousel').owlCarousel({
-    item: 1,
-    loop: true,
-    nav: false,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    autoHeight: false,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 3
-        }
+
+const menuItems = document.querySelectorAll('.navbar-nav li a');
+
+menuItems.forEach(item => {
+    if (item.getAttribute('href') === window.location.pathname + window.location.hash) {
+        item.classList.add('active');
     }
-})
+});
+
+
+
+
