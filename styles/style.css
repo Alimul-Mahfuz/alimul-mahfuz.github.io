@@ -1,4 +1,9 @@
 /* Google fonts */
+:root{
+  --primary-bg:rgba(255, 254, 254, 0.9);
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,700&display=swap");
@@ -6,7 +11,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
-  background-color: rgba(254, 234, 217, 0.128);
+  background-color:#9aadb258;
   font: 400;
   /* background-image: url(../assets/images/background/pglwd6pq.png); */
 }
@@ -14,10 +19,12 @@ body {
 
 #banner {
   position: relative;
-  height: 150px;
-  background: url(../assets/images/walpy_1673443732241.jpg);
+  height: 300px;
+  background: url(../assets/images/rainy.jpg);
   background-size: cover;
   background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  backdrop-filter: blur(10px); /* Adjust blur amount as needed */
 }
 .icon {
   width: 20px;
@@ -27,33 +34,11 @@ body {
   background-color: rgba(100, 148, 237, 0.274);
 }
 
-.bg-main {
-  background-color: rgb(255, 254, 254);
-}
-
 .text-justify {
   text-align: justify;
 }
 
 
-@media screen and (max-width: 360px) {
-  #banner {
-    height: 150px;
-  }
-}
-@media screen and (max-width: 560px) {
-  #banner {
-    height: 100px;
-  }
-}
-@media screen and (min-width: 660px) {
-  .personal-info {
-    width: 100%;
-  }
-  .top-50 {
-    top: 130% !important;
-  }
-}
 
 hr {
   border: none;
@@ -70,4 +55,49 @@ hr {
   text-decoration: none;
 }
 
+.main-wrapper{
+  height: 10000px !important;
+}
+
+/* footer{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+} */
+
+@media screen and (max-width: 360px) {
+  #banner {
+    height: 250px;
+  }
+  .personal-info{
+    top:-125px;
+  }
+
+}
+@media screen and (max-width: 560px) {
+  #banner {
+    height: 200px;
+  }
+  .personal-info{
+    top:-170px;
+  }
+  #hero-img{
+    background-color: none;
+    width: 220px;
+  }
+  
+}
+@media screen and (min-width: 660px) {
+  .personal-info{
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    top:-100px;
+  }
+  #hero-img{
+    background-color: none;
+    width: 180px;
+  }
+}
 
