@@ -19,7 +19,7 @@ body {
 
 #banner {
   position: relative;
-  height: 300px;
+  height: 300px !important;
   background: url(../assets/images/rainy.jpg);
   background-size: cover;
   background-position: center;
@@ -38,6 +38,9 @@ body {
   text-align: justify;
 }
 
+.sm-icon{
+  width: 32px;
+}
 
 
 hr {
@@ -51,7 +54,7 @@ hr {
   overflow-y: auto;
 }
 
-.link-unstyle{
+.link-unstyled{
   text-decoration: none;
 }
 
@@ -67,6 +70,7 @@ hr {
 
 } */
 
+
 @media screen and (max-width: 360px) {
   #banner {
     height: 250px;
@@ -81,14 +85,24 @@ hr {
     height: 200px;
   }
   .personal-info{
-    top:-170px;
+    top:-120px;
   }
+
+  .certificate-logo{
+    width: 100px;
+  }
+  
   #hero-img{
     background-color: none;
-    width: 220px;
+    width: 180px;
   }
   
 }
+
+.text-justified{
+  text-align: justify;
+}
+
 @media screen and (min-width: 660px) {
   .personal-info{
     border-radius: 10px;
