@@ -1,6 +1,6 @@
 /* Google fonts */
 :root{
-  --primary-bg:rgba(255, 254, 254, 0.9);
+  --primary-bg:rgba(245, 239, 251, 0.666);
 }
 
 
@@ -11,7 +11,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
-  background-color:#9aadb258;
+  background-color:#758bc230;
+  
   font: 400;
   /* background-image: url(../assets/images/background/pglwd6pq.png); */
 }
@@ -19,19 +20,17 @@ body {
 
 #banner {
   position: relative;
-  height: 300px !important;
-  background: url(../assets/images/rainy.jpg);
+  height: 420px !important;
+  background: url(../assets/images/bg-cover-2.png);
   background-size: cover;
   background-position: center;
-  transition: background-image 0.5s ease-in-out;
-  backdrop-filter: blur(10px); /* Adjust blur amount as needed */
 }
 .icon {
   width: 20px;
   height: 20px;
 }
 .bg-navbar {
-  background-color: rgba(100, 148, 237, 0.274);
+  background-color: #758BC2;
 }
 
 .text-justify {
@@ -69,7 +68,10 @@ hr {
   width: 100%;
 
 } */
-
+.frosted{
+  background-color: rgba(206, 210, 217, 0.743);
+  backdrop-filter: blur(10px);
+}
 
 @media screen and (max-width: 360px) {
   #banner {
@@ -82,7 +84,7 @@ hr {
 }
 @media screen and (max-width: 560px) {
   #banner {
-    height: 200px;
+    height: 290px !important;
   }
   .personal-info{
     top:-120px;
@@ -107,6 +109,7 @@ hr {
   .personal-info{
     border-radius: 10px;
     background-color: var(--primary-bg);
+    backdrop-filter: blur(10px);
     top:-100px;
   }
   #hero-img{
